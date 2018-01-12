@@ -8,8 +8,8 @@ public class Main {
 		// upper limit for secret number in guessing game
 		int upperBound = 100;
 		NumberGame game = new JampttwsGame(upperBound);
-//		GameConsole ui = new GameConsole( );
-		GameSolver ui = new GameSolver();
+		GameConsole ui = new GameConsole( );
+//		GameSolver ui = new GameSolver();
 		int solution = ui.play( game );
 		System.out.println("play() returned "+ solution);
 		System.out.print("you guess " + game.getCount() + " times");
