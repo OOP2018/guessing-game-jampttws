@@ -10,6 +10,7 @@ public class Main {
 		NumberGame game = new JampttwsGame(upperBound);
 		GameConsole ui = new GameConsole( );
 		int solution = ui.play( game );
-		System.out.println("play() returned "+solution);
+		System.out.println("play() returned "+ solution);
+		System.out.print("you guess " + game.getCount() + "times");
 	}
 }
