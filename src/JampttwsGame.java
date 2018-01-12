@@ -36,9 +36,9 @@ public class JampttwsGame extends NumberGame {
 			super.setMessage("Correct!!");
 			return true;
 		} else if(number > secret){
-			super.setMessage("too large");
+			super.setMessage("Your answer is too large.");
 		} else if(number < secret){
-			super.setMessage("too small");
+			super.setMessage("Your answer is too small.");
 		}
 		return false;
 	}
