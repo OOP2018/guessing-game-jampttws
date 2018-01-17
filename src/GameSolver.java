@@ -13,6 +13,7 @@ public class GameSolver {
 	 * @return the correct answer of the game.
 	 */
 	public int play(NumberGame game){
+		
 		Random rand = new Random();
 		int maxGuess = game.getUpperBound();
 		int minGuess = 1;
@@ -36,7 +37,6 @@ public class GameSolver {
 			if (game.getMessage().contains("large")) {
 				maxGuess = guess - 1;
 			}
-
 		}
 		return guess;
 	}
