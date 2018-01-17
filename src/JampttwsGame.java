@@ -25,11 +25,11 @@ public class JampttwsGame extends NumberGame {
 		super.setMessage("I'm thinking of a number between 1 and " + upperBound);
 	}
 	
-	@Override
 	/**
 	 * @param a number you guess.
      * @return true if you put the correct number.
 	 */
+	@Override
 	public boolean guess(int number) {
 		count++;
 		if(number == secret){
@@ -52,11 +52,11 @@ public class JampttwsGame extends NumberGame {
 		return "Guess a secret number between 1 and " + upperBound;
 	}
 	
-	@Override 
 	/**
 	 * Get the times that you had guessed.
 	 * @return count
 	 */
+	@Override
     public int getCount(){
 		return count;   	
     }

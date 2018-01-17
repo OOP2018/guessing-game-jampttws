@@ -18,17 +18,17 @@ public class GameSolver {
 		int minGuess = 1;
 		System.out.println(game.toString());
 		
-		while (true) {
-			System.out.println(game.getMessage());
-			System.out.print("Your answer? ");
-			int guess = rand.nextInt(maxGuess) + 1;
+		int guess = 0;
+		boolean correct = game.guess(guess);
+		
+		while (!correct) {
+			guess = rand.nextInt(maxGuess) + 1;
 			while (guess < minGuess) {
 				guess = rand.nextInt(maxGuess) + 1;
 			}
-			System.out.println(guess);
-			boolean correct = game.guess(guess);
+			correct = game.guess(guess);
 			if (correct) {
-				return guess;
+				break;
 			}
 			if (game.getMessage().contains("small")) {
 				minGuess = guess + 1;
@@ -38,6 +38,7 @@ public class GameSolver {
 			}
 
 		}
+		return guess;
 	}
 	
 }
