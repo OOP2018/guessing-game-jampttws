@@ -1,3 +1,4 @@
+package UI;
 import java.util.Random;
 
 /**
@@ -18,9 +19,10 @@ public class JampttwsGame extends NumberGame {
 	public JampttwsGame(int upperBound) {
 		this.upperBound = upperBound;
 		
-		long seed = System.nanoTime();
-		Random rand = new Random(seed);
+		Random rand = new Random();
 		this.secret = rand.nextInt(upperBound)+1;
+		
+		System.out.print(secret);
 		
 		super.setMessage("I'm thinking of a number between 1 and " + upperBound);
 	}
@@ -32,6 +34,8 @@ public class JampttwsGame extends NumberGame {
 	@Override
 	public boolean guess(int number) {
 		count++;
+		setChanged();
+		notifyObservers();
 		if(number == secret){
 			super.setMessage("Correct!!");
 			return true;

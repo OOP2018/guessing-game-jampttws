@@ -1,3 +1,4 @@
+package UI;
 import java.util.Random;
 
 /**
@@ -17,7 +18,6 @@ public class GameSolver {
 		Random rand = new Random();
 		int maxGuess = game.getUpperBound();
 		int minGuess = 1;
-		System.out.println(game.toString());
 		
 		int guess = 0;
 		boolean correct = game.guess(guess);
