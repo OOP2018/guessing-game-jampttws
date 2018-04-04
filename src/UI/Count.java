@@ -10,12 +10,18 @@ import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+/**
+ * A counter that count the time that you guess a number.
+ * @author Tanasorn Tritawisup
+ *
+ */
 public class Count implements java.util.Observer{
 	
 	private Stage stage;
 	private Label label;
 	private NumberGame game;
 	
+	/**set a game*/
 	public void setGame(NumberGame game){
 		this.game = game;
 	}

@@ -10,6 +10,7 @@ import javafx.stage.Stage;
  * A main class for the GuessingGame.
  * It is responsible for creating objects, 
  * connecting objects, and running the game UI.
+ * @author Tanasorn Tritawisup
  */
 public class Main extends Application {
 	

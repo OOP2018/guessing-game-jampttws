@@ -8,7 +8,7 @@ import javafx.scene.control.Alert.AlertType;
 
 /**
  * Controller for the Counter buttons user interface.
- * @author 
+ * @author Tanasorn Tritawisup
  *
  */
 public class GuessingGameController {

@@ -65,6 +65,6 @@ public class NumberGame extends java.util.Observable{
     }
 	
 	public int getCount(){
-		return 1;    	
+		return 0;    	
     }
 }
